@@ -15,3 +15,10 @@ variables:
 steps:
 - script: dotnet build src/WebApi1/WebApi1.csproj  --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
+- task: Docker@2
+  inputs:
+    containerRegistry: 'SGreenACR'
+    repository: 'sgreenrepo'
+    command: 'buildAndPush'
+    Dockerfile: '/src/WebApi1/Dockerfile'
+    buildContext: '/src'
