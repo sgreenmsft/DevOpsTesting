@@ -10,7 +10,7 @@ spec:
         app: webapi1 
     spec:
       containers:
-        - name: webapi1 
-          image: sgreenacr.azurecr.io/webapi1 
+        - name: webapi1
+          image: sgreenacr.azurecr.io/webapi1:20
           ports:
           - containerPort: 80
