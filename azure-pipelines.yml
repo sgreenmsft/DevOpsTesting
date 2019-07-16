@@ -23,4 +23,4 @@ steps:
     Dockerfile: 'src/WebApi1/Dockerfile'
     buildContext: 'src'
     tags: |
-        $(BuildId)
+        $(Build.BuildId)
