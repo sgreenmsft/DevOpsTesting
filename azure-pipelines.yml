@@ -20,5 +20,5 @@ steps:
     containerRegistry: 'SGreenACR'
     repository: 'sgreenrepo'
     command: 'buildAndPush'
-    Dockerfile: '/src/WebApi1/Dockerfile'
-    buildContext: '/src'
+    Dockerfile: 'src/WebApi1/Dockerfile'
+    buildContext: 'src'
