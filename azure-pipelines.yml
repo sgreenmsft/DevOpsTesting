@@ -22,4 +22,5 @@ steps:
     command: 'buildAndPush'
     Dockerfile: 'src/WebApi1/Dockerfile'
     buildContext: 'src'
-    tags: 'webapi1:latest'
+    tags: |
+        $(tag)
