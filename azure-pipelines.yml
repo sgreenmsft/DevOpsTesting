@@ -18,9 +18,9 @@ steps:
 - task: Docker@2
   inputs:
     containerRegistry: 'SGreenACR'
-    repository: 'sgreenrepo'
+    repository: 'webapi1'
     command: 'buildAndPush'
     Dockerfile: 'src/WebApi1/Dockerfile'
     buildContext: 'src'
     tags: |
-        $(tag)
+        $(Build.BuildId)
